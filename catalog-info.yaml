@@ -22,6 +22,7 @@ metadata:
   tags:
     - store
     - rest
+    - pet
   links:
     - url: https://github.com/marissass/swagger-petstore
       title: GitHub Repo

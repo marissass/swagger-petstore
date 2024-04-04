@@ -9,6 +9,10 @@ spec:
   type: other
   lifecycle: production
   owner: marissass
+  dependsOn:
+    - resource:default/artists-db
+  providesApis:
+    - swagger-petstore-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API

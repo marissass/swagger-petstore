@@ -2,6 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: swagger-petstore
+  tags:
+    - store
+    - rest
+    - pet
+  links:
+    - url: https://github.com/marissass/swagger-petstore
+      title: GitHub Repo
+      icon: github
+    - url: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+      title: API Spec
+      icon: code
   annotations:
     github.com/project-slug: marissass/swagger-petstore
     backstage.io/techdocs-ref: dir:.

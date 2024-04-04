@@ -31,7 +31,7 @@ metadata:
       icon: code
 spec:
   type: openapi
-  lifecycle: dev
+  lifecycle: production
   owner: marissass
   definition:
     $text: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml

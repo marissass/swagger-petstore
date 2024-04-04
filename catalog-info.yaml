@@ -19,9 +19,19 @@ kind: API
 metadata:
   name: swagger-petstore-api
   description: The petstore swagger api example
+  tags:
+    - store
+    - rest
+  links:
+    - url: https://github.com/swagger-api/swagger-petstore
+      title: GitHub Repo
+      icon: github
+    - url: https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+      title: API Spec
+      icon: code
 spec:
   type: openapi
-  lifecycle: production
+  lifecycle: dev
   owner: marissass
   definition:
-    $text: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+    $text: ./petstore.oas.yaml

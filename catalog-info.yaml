@@ -7,5 +7,17 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: other
-  lifecycle: unknown
+  lifecycle: production
   owner: marissass
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: swagger-petstore-api
+  description: The petstore swagger api example
+spec:
+  type: openapi
+  lifecycle: production
+  owner: marissass
+  definition:
+    $text: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml

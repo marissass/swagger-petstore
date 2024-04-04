@@ -8,3 +8,6 @@ spec:
   type: other
   lifecycle: unknown
   owner: marissass
+metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:.

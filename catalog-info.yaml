@@ -4,10 +4,8 @@ metadata:
   name: swagger-petstore
   annotations:
     github.com/project-slug: marissass/swagger-petstore
+    backstage.io/techdocs-ref: dir: .
 spec:
   type: other
   lifecycle: unknown
   owner: marissass
-metadata:
-  annotations:
-    backstage.io/techdocs-ref: dir:.

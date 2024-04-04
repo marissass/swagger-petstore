@@ -14,7 +14,7 @@ This sample is based on [swagger-inflector](https://github.com/swagger-api/swagg
 To run the server, run this task:
 
 ```
-mvn package jetty:run
+mvn package jetty:run -Djava.awt.headless=true
 ```
 
 This will start Jetty embedded on port 8080.

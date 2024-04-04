@@ -18,15 +18,15 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: swagger-petstore-api
-  description: The petstore swagger api example
+  description: The Petstore - OpenAPI 3.0
   tags:
     - store
     - rest
   links:
-    - url: https://github.com/swagger-api/swagger-petstore
+    - url: https://github.com/marissass/swagger-petstore
       title: GitHub Repo
       icon: github
-    - url: https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+    - url: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml
       title: API Spec
       icon: code
 spec:
@@ -34,4 +34,4 @@ spec:
   lifecycle: dev
   owner: marissass
   definition:
-    $text: ./petstore.oas.yaml
+    $text: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml

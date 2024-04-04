@@ -14,6 +14,7 @@ spec:
     - resource:default/pets-db
   providesApis:
     - swagger-petstore-api
+    - Traffic-kafka-v1
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
@@ -38,6 +39,29 @@ spec:
   system: pets
   definition:
     $text: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: Traffic-kafka-v1
+  description: The Traffic events - AsyncAPI 1.0
+  tags:
+    - traffic
+    - rest
+  links:
+    - url: https://github.com/asyncapi/spec
+      title: GitHub Repo
+      icon: github
+    - url: https://github.com/asyncapi/spec/blob/master/examples/streetlights-kafka-asyncapi.yml
+      title: API Spec
+      icon: code
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: marissass
+  system: pets
+  definition:
+    $text: https://github.com/marissass/swagger-petstore/blob/master/AsyncAPI/TrafficLights.yaml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource

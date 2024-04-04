@@ -9,8 +9,9 @@ spec:
   type: other
   lifecycle: production
   owner: marissass
+  system: pets
   dependsOn:
-    - resource:default/artists-db
+    - resource:default/pets-db
   providesApis:
     - swagger-petstore-api
 ---
@@ -34,5 +35,16 @@ spec:
   type: openapi
   lifecycle: production
   owner: marissass
+  system: pets
   definition:
     $text: https://github.com/marissass/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: pets-db
+  description: Stores pets details
+spec:
+  type: database
+  owner: marissass
+  system: pets
